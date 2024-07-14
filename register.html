@@ -5,11 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { max-width: 600px; margin: auto; padding: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centraliza conteúdo horizontalmente */
+            align-items: center; /* Centraliza conteúdo verticalmente */
+            height: 100vh; /* Tamanho total da tela */
+            background: #f0f0f0; /* Cor de fundo */
+            overflow: hidden; /* Evita barras de rolagem */
+        }
+        .container {
+            max-width: 600px;
+            padding: 100px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center; /* Centraliza o conteúdo interno */
+            position: relative; /* Para posicionamento absoluto do vídeo */
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza elementos do formulário */
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        /* Estilos para o vídeo de fundo */
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que o vídeo cubra todo o container */
+            z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+        }
     </style>
 </head>
 <body>
+    <!-- Vídeo de fundo -->
+    <video id="video-background" autoplay muted loop>
+        <source src="assets/musica.mp4" type="video/mp4">
+        <!-- Fallback para navegadores que não suportam vídeo -->
+        Your browser does not support the video tag.
+    </video>
+
     <div class="container">
         <h2>Registrar</h2>
         <form id="registerForm">
@@ -28,6 +93,7 @@
             <button type="submit">Registrar</button>
         </form>
     </div>
+
     <script>
         document.getElementById('registerForm').addEventListener('submit', async function(event) {
             event.preventDefault();
