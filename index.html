@@ -233,7 +233,7 @@
 
         .cta-button {
             display: inline-block;
-            background-color: rgb(245, 68, 3);
+            background-color: red;
             /* Vermelho */
             color: white;
             /* White */
@@ -244,7 +244,7 @@
         }
 
         .cta-button:hover {
-            background-color: rgb(13, 149, 136);
+            background-color: blue;
             /* Azul mais claro ao passar o mouse */
         }
 
@@ -412,8 +412,6 @@
         }
 
 
-
-
         @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -486,6 +484,59 @@
     }
 }
 
+.content {
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+.content .button {
+    display: inline-block; /* Mantém os botões como elementos de bloco em linha */
+    width: 200px; /* Define uma largura fixa para os botões */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    margin: 10px 0; /* Adiciona espaçamento vertical */
+    background-color: red; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto dentro dos botões */
+    text-decoration: none; /* Remove a sublinha dos links */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+.content .button:hover {
+    background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+
+.content {
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+
+.content {
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.content a {
+    display: inline-block; /* Mantém os links como elementos de bloco em linha */
+    width: 200px; /* Define uma largura fixa para os links */
+    padding: 15px 25px; /* Adiciona espaçamento interno */
+    margin: 10px 20px; /* Adiciona espaçamento ao redor dos links */
+    background: linear-gradient(45deg, #ff6b6b, #f06595); /* Adiciona um gradiente ao fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto dentro dos links */
+    text-decoration: none; /* Remove a sublinha dos links */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    font-size: 18px; /* Define o tamanho da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+    transition: background 0.3s ease, transform 0.3s ease; /* Adiciona transições suaves */
+}
+
+.content a:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b); /* Altera a cor do gradiente ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
     </style>
 </head>
 
@@ -535,10 +586,10 @@
 
     <div class="content">
         <section id="home">
-        <h1>Buy our musical taste</h1>
-        <a href="register.html">Registrar</a> 
+        <h1>Shop our musical taste</h1>
+        <a href="register.html">Registrar</a>  
         <a href="login.html">Login</a>
-        <a href="reset-password.html">Recover Password</a>
+        <a href="reset-password.html">Recuperar Senha</a>
         </section>
         <br>
 
