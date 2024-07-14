@@ -18,14 +18,16 @@
         }
         .container {
             background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
-            padding: 100px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 300px; /* Largura do formulário */
             text-align: center; /* Centraliza elementos do formulário */
+            position: relative; /* Para posicionamento absoluto do vídeo */
         }
         h2 {
             color: #333;
+            margin-bottom: 20px;
         }
         label {
             display: block;
@@ -35,22 +37,26 @@
         }
         input {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             margin-bottom: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
         }
         button {
-            background-color: red;
+            background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradiente */
             color: #fff;
             padding: 10px 15px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            width: 100%; /* Largura total */
+            font-size: 16px; /* Tamanho da fonte */
+            transition: background 0.3s ease, transform 0.3s ease; /* Transições suaves */
         }
         button:hover {
-            background-color: blue;
+            background: linear-gradient(45deg, #0056b3, #007BFF); /* Mudança de gradiente */
+            transform: scale(1.05); /* Leve aumento ao passar o mouse */
         }
         /* Estilos para o vídeo de fundo */
         #video-background {
@@ -109,4 +115,3 @@
     </script>
 </body>
 </html>
-
