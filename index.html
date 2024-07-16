@@ -7,7 +7,7 @@
     <title>Music Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <style> 
+    <style>
         body,
         html {
             margin: 0;
@@ -58,7 +58,7 @@
         }
 
         nav {
-            background:rgba(0, 0, 0, 0.7);
+            background:;
             padding: 10px;
             text-align: center;
             position: relative;
@@ -330,21 +330,21 @@
             background-color: rgba(5, 5, 5, 0.089);
         }
 
-#news,
-#services,
-#careers,
-#review,
-#lessons,
-#repair,
-#events-calendar,
-#rentals, 
-#politics,
-#partnerships,
-#owner,
-#jobs {
-    background-color: rgba(5, 5, 5, 0.089);
-    /* Outros estilos adicionais, como margens, paddings, cores de texto, etc. */
-}
+        #news,
+        #services,
+        #careers,
+        #review,
+        #lessons,
+        #repair,
+        #events-calendar,
+        #rentals,
+        #politics,
+        #partnerships,
+        #owner,
+        #jobs {
+            background-color: rgba(5, 5, 5, 0.089);
+            /* Outros estilos adicionais, como margens, paddings, cores de texto, etc. */
+        }
 
         .footer-bottom {
             background-color: ;
@@ -413,131 +413,141 @@
 
 
         @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+            0% {
+                transform: rotate(0deg);
+            }
 
-.product img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 20px;
-    animation: rotate 10s linear infinite; /* Define a animação de rotação */
-}
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes grow {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
-}
-
-.product img {
-    transition: transform 0.5s ease-in-out;
-}
-
-.product:hover img {
-    animation: grow 0.5s forwards;
-}
+        .product img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+            animation: rotate 10s linear infinite;
+            /* Define a animação de rotação */
+        }
 
 
-@keyframes swing {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    100% {
-        transform: rotate(-10deg);
-    }
-}
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
 
-.content {
-    text-align: center; /* Centraliza o conteúdo dentro da div */
-}
+            50% {
+                transform: scale(1.1);
+            }
 
-.content .button {
-    display: inline-block; /* Mantém os botões como elementos de bloco em linha */
-    width: 200px; /* Define uma largura fixa para os botões */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    margin: 10px 0; /* Adiciona espaçamento vertical */
-    background-color: red; /* Define a cor de fundo */
-    color: white; /* Define a cor do texto */
-    text-align: center; /* Centraliza o texto dentro dos botões */
-    text-decoration: none; /* Remove a sublinha dos links */
-    border-radius: 5px; /* Adiciona cantos arredondados */
-    font-size: 16px; /* Define o tamanho da fonte */
-}
+            100% {
+                transform: scale(1);
+            }
+        }
 
-.content .button:hover {
-    background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
-}
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        .product img {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .product:hover img {
+            animation: grow 0.5s forwards;
+        }
+
+
+        @keyframes swing {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(10deg);
+            }
+
+            100% {
+                transform: rotate(-10deg);
+            }
+        }
+
+        .content {
+            text-align: center;
+            /* Centraliza o conteúdo dentro da div */
+        }
+
+        .content .button {
+            display: inline-block;
+            /* Mantém os botões como elementos de bloco em linha */
+            width: 200px;
+            /* Define uma largura fixa para os botões */
+            padding: 10px 20px;
+            /* Adiciona espaçamento interno */
+            margin: 10px 0;
+            /* Adiciona espaçamento vertical */
+            background-color: red;
+            /* Define a cor de fundo */
+            color: white;
+            /* Define a cor do texto */
+            text-align: center;
+            /* Centraliza o texto dentro dos botões */
+            text-decoration: none;
+            /* Remove a sublinha dos links */
+            border-radius: 5px;
+            /* Adiciona cantos arredondados */
+            font-size: 16px;
+            /* Define o tamanho da fonte */
+        }
+
+        .content .button:hover {
+            background-color: darkred;
+            /* Altera a cor de fundo ao passar o mouse */
+        }
 
 
 
-.content {
-    text-align: center; /* Centraliza o conteúdo dentro da div */
-}
+
+        .content {
+            text-align: center;
+            /* Centraliza o conteúdo dentro da div */
+        }
 
 
-.content {
-    text-align: center; /* Centraliza o conteúdo dentro da div */
-    padding: 20px; /* Adiciona espaçamento interno */
-}
+        .content {
+            text-align: center;
+            /* Centraliza o conteúdo dentro da div */
+            padding: 20px;
+            /* Adiciona espaçamento interno */
+        }
 
-.content a {
-    display: inline-block; /* Mantém os links como elementos de bloco em linha */
-    width: 200px; /* Define uma largura fixa para os links */
-    padding: 15px 25px; /* Adiciona espaçamento interno */
-    margin: 10px 20px; /* Adiciona espaçamento ao redor dos links */
-    background: linear-gradient(45deg, #ff6b6b, #f06595); /* Gradiente de cores vibrantes */
-    color: white; /* Define a cor do texto */
-    text-align: center; /* Centraliza o texto dentro dos links */
-    text-decoration: none; /* Remove a sublinha dos links */
-    border-radius: 10px; /* Adiciona cantos arredondados */
-    font-size: 18px; /* Define o tamanho da fonte */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
-    transition: background 0.3s ease, transform 0.3s ease; /* Adiciona transições suaves */
-}
-
-.content a:hover {
-    background: linear-gradient(45deg, #f06595, #ff6b6b); /* Altera a cor do gradiente ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-}
-
-         .content a {
+        .content a {
             display: inline-block;
             /* Mantém os links como elementos de bloco em linha */
             width: 200px;
@@ -548,19 +558,92 @@
             /* Adiciona espaçamento ao redor dos links */
             background: linear-gradient(45deg, #e67e22, #d35400);
 
-              .content a:hover {
+
+
+
+            /* Gradiente de cores vibrantes */
+            color: white;
+            /* Define a cor do texto */
+            text-align: center;
+            /* Centraliza o texto dentro dos links */
+            text-decoration: none;
+            /* Remove a sublinha dos links */
+            border-radius: 10px;
+            /* Adiciona cantos arredondados */
+            font-size: 18px;
+            /* Define o tamanho da fonte */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Adiciona uma sombra */
+            transition: background 0.3s ease, transform 0.3s ease;
+            /* Adiciona transições suaves */
+        }
+
+        .content a:hover {
             background: linear-gradient(45deg, #3498db, #2980b9);;
             /* Altera a cor do gradiente ao passar o mouse */
             transform: scale(1.05);
             /* Aumenta ligeiramente o tamanho ao passar o mouse */
         }
 
- .content a:hover {
-            background: linear-gradient(45deg, #3498db, #2980b9);;
-            /* Altera a cor do gradiente ao passar o mouse */
-            transform: scale(1.05);
-            /* Aumenta ligeiramente o tamanho ao passar o mouse */
-        }
+
+
+
+
+
+        h1 {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    background: linear-gradient(45deg, #38064c, #027272);
+    color: white;
+    text-align: center;
+    text-transform: uppercase; /* Texto em caixa alta */
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 42px; /* Aumentei um pouco o tamanho da fonte */
+    font-family: 'Pacifico', cursive;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1:hover {
+    background: linear-gradient(45deg, #8e44ad, #9b59b6);
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Aumentei um pouco a intensidade da sombra */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-button {
+    display: inline-block;
+    width: 200px;
+    padding: 15px 25px;
+    margin: 10px 20px;
+    background: linear-gradient(45deg, #2ecc71, #27ae60); /* Cor verde-esmeralda como exemplo */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* Alteração ao passar o mouse */
+    transform: scale(1.05);
+}
+
     </style>
 </head>
 
@@ -593,26 +676,26 @@
             <a href="#contact"><i class="fas fa-envelope"></i> Contato</a>
             <a href="#owner"><i class="fas fa-user-tie"></i> Dono da Loja</a>
             <a href="#jobs"><i class="fas fa-briefcase"></i> Vagas de Emprego</a>
-                <a href="#news"><i class="fas fa-newspaper"></i> Notícias</a>
-                <a href="#services"><i class="fas fa-concierge-bell"></i> Serviços</a>
-                <a href="#careers"><i class="fas fa-user-tie"></i> Carreiras</a>
-                <a href="#lessons"><i class="fas fa-chalkboard-teacher"></i> Aulas</a>
-                <a href="#repair"><i class="fas fa-tools"></i> Reparos</a>
-                <a href="#events-calendar"><i class="fas fa-calendar-check"></i> Calendário de Eventos</a>
-                <a href="#rentals"><i class="fas fa-handshake"></i> Aluguel de Instrumentos</a>
-                <a href="#politics"><i class="fas fa-file-alt"></i> Política da Loja</a>
-                <a href="#partnerships"><i class="fas fa-handshake"></i> Parcerias</a>
-            </div>     
-        </nav>
+            <a href="#news"><i class="fas fa-newspaper"></i> Notícias</a>
+            <a href="#services"><i class="fas fa-concierge-bell"></i> Serviços</a>
+            <a href="#careers"><i class="fas fa-user-tie"></i> Carreiras</a>
+            <a href="#lessons"><i class="fas fa-chalkboard-teacher"></i> Aulas</a>
+            <a href="#repair"><i class="fas fa-tools"></i> Reparos</a>
+            <a href="#events-calendar"><i class="fas fa-calendar-check"></i> Calendário de Eventos</a>
+            <a href="#rentals"><i class="fas fa-handshake"></i> Aluguel de Instrumentos</a>
+            <a href="#politics"><i class="fas fa-file-alt"></i> Política da Loja</a>
+            <a href="#partnerships"><i class="fas fa-handshake"></i> Parcerias</a>
+        </div>
+    </nav>
     </nav>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 
     <div class="content">
         <section id="home">
-        <a href="register.html">Registrar</a>  
-        <a href="login.html">Login</a>
-        <a href="reset-password.html">Recuperar Senha</a>
+            <a href="register.html">Registrar</a>
+            <a href="login.html">Login</a>
+            <a href="reset-password.html">Recuperar Senha</a>
         </section>
         <br>
 
@@ -719,7 +802,7 @@
             </section>
             <br>
             <br>
-    
+
             <section id="testimonials">
                 <p>Testimonials</p>
                 <div class="testimonial">
@@ -745,13 +828,13 @@
                     <p>"Finding a quality violin can be challenging, but the selection and service at Music Store
                         Harmony made it easy. Highly recommended!"</p>
                 </div>
-            
+
                 <div class="testimonial">
                     <p><em>— Lucas R., Music Teacher</em></p>
                     <p>"As a music teacher, I always recommend Music Store Harmony to my students. They offer great
                         instruments and excellent customer service."</p>
                 </div>
-              
+
                 <div class="testimonial">
                     <p><em>— Sofia L., Music Producer</em></p>
                     <p>"The selection of recording equipment and accessories is impressive. This store is a
@@ -792,106 +875,129 @@
 
             <section id="owner">
                 <p>Store Owner:</p>
-                <p>João Silva, founder and owner of Harmonia Musical, is an experienced and enthusiastic musician with more than 20 years of career in the world of music. João brought his passion and knowledge to create a store that serves both beginners and professional musicians. His vision is to provide a space where everyone can find instruments and accessories needed to express their musical creativity. João believes that music transforms lives and is always available to offer advice and share his experiences with customers.</p>
+                <p>João Silva, founder and owner of Harmonia Musical, is an experienced and enthusiastic musician with
+                    more than 20 years of career in the world of music. João brought his passion and knowledge to create
+                    a store that serves both beginners and professional musicians. His vision is to provide a space
+                    where everyone can find instruments and accessories needed to express their musical creativity. João
+                    believes that music transforms lives and is always available to offer advice and share his
+                    experiences with customers.</p>
             </section>
             <br>
             <br>
-            
+
             <section id="jobs">
                 <p>Job Vacancies:</p>
-                <p>We are always looking for talented people who are passionate about music to join our team at Harmonia Musical. We offer a dynamic and welcoming work environment where you can grow professionally and share your love of music. Check out our available job vacancies:</p>
-                
+                <p>We are always looking for talented people who are passionate about music to join our team at Harmonia
+                    Musical. We offer a dynamic and welcoming work environment where you can grow professionally and
+                    share your love of music. Check out our available job vacancies:</p>
+
                 <ul>
-                    <li><strong>Sales Consultant:</strong> Looking for someone with customer service skills and knowledge of musical instruments. Responsible for helping customers find the right products and offer technical support.</li>
-            
-                    <li><strong>Maintenance Technician:</strong> Professional with experience in repair and maintenance of musical instruments. Ability to diagnose and resolve technical problems efficiently.</li>
-            
-                    <li><strong>Music Teacher:</strong> Experienced musician to teach various instruments. Must have patience, communication skills, and passion for teaching.</li>
+                    <li><strong>Sales Consultant:</strong> Looking for someone with customer service skills and
+                        knowledge of musical instruments. Responsible for helping customers find the right products and
+                        offer technical support.</li>
+
+                    <li><strong>Maintenance Technician:</strong> Professional with experience in repair and maintenance
+                        of musical instruments. Ability to diagnose and resolve technical problems efficiently.</li>
+
+                    <li><strong>Music Teacher:</strong> Experienced musician to teach various instruments. Must have
+                        patience, communication skills, and passion for teaching.</li>
                 </ul>
-            
-                <p>If you are interested in applying for one of the vacancies, send your CV to <a href="mailto:loremipslum@harmoniamusical.com">loremipslum@harmoniamusical.com</a> with the title of the vacancy in the subject of the email. Join us and be part of a team dedicated to spreading the joy of music.</p>
+
+                <p>If you are interested in applying for one of the vacancies, send your CV to <a
+                        href="mailto:loremipslum@harmoniamusical.com">loremipslum@harmoniamusical.com</a> with the title
+                    of the vacancy in the subject of the email. Join us and be part of a team dedicated to spreading the
+                    joy of music.</p>
             </section>
             <br>
             <br>
-<!-- News Section -->
-<section id="news">
-    <p>News</p>
-    <p>Stay up to date with the latest musical instrument news, product launches, industry trends and local events.</p>
-</section>
-<br>
-<br>
+            <!-- News Section -->
+            <section id="news">
+                <p>News</p>
+                <p>Stay up to date with the latest musical instrument news, product launches, industry trends and local
+                    events.</p>
+            </section>
+            <br>
+            <br>
 
-<!-- Services Section -->
-<section id="services">
-    <p>Services</p>
-    <p>Discover our specialized services, such as tuning, repairs, instrument customization and consultancy to choose the ideal instrument.</p>
-</section>
-<br>
-<br>
+            <!-- Services Section -->
+            <section id="services">
+                <p>Services</p>
+                <p>Discover our specialized services, such as tuning, repairs, instrument customization and consultancy
+                    to choose the ideal instrument.</p>
+            </section>
+            <br>
+            <br>
 
-   <!-- Careers Section -->
-   <section id="careers">
-    <p>Careers</p>
-    <p>Come and be part of our team! Check out available positions and information on how to apply to work with us.</p>
-</section>
-<br>
-<br>
+            <!-- Careers Section -->
+            <section id="careers">
+                <p>Careers</p>
+                <p>Come and be part of our team! Check out available positions and information on how to apply to work
+                    with us.</p>
+            </section>
+            <br>
+            <br>
 
-<!-- Reviews Section -->
-<section id="reviews">
-    <p>Reviews</p>
-    <p>Read our customers' opinions on products purchased and services used. Share your experience with us!</p>
-</section>
-<br>
-<br>
+            <!-- Reviews Section -->
+            <section id="reviews">
+                <p>Reviews</p>
+                <p>Read our customers' opinions on products purchased and services used. Share your experience with us!
+                </p>
+            </section>
+            <br>
+            <br>
 
-<!-- Classes Section -->
-<section id="lessons">
-    <p>Classes</p>
-    <p>Explore our music lesson options, including individual and group lessons, for all levels and musical styles.</p>
-</section>
-   <br>
-   <br>
+            <!-- Classes Section -->
+            <section id="lessons">
+                <p>Classes</p>
+                <p>Explore our music lesson options, including individual and group lessons, for all levels and musical
+                    styles.</p>
+            </section>
+            <br>
+            <br>
 
-<!-- Repair Section -->
-<section id="repair">
-    <p>Repairs</p>
-    <p>We offer professional repair services to keep your instruments in perfect working condition.</p>
-</section>
-<br>
-<br>
+            <!-- Repair Section -->
+            <section id="repair">
+                <p>Repairs</p>
+                <p>We offer professional repair services to keep your instruments in perfect working condition.</p>
+            </section>
+            <br>
+            <br>
 
-<!-- Event Calendar -->
-<section id="events-calendar">
-    <p>Events Calendar</p>
-    <p>Check out our updated calendar of musical events, workshops, special classes and other music-related activities.</p>
-</section>
-<br>
-<br>
+            <!-- Event Calendar -->
+            <section id="events-calendar">
+                <p>Events Calendar</p>
+                <p>Check out our updated calendar of musical events, workshops, special classes and other music-related
+                    activities.</p>
+            </section>
+            <br>
+            <br>
 
-    <!-- Instrument Rental Section -->
-    <section id="rentals">
-        <p>Instrument Rental</hp>
-        <p>Explore our musical instrument rental options for events, recording or experimentation before purchasing.</p>
-    </section>
-    <br>
-    <br>
+            <!-- Instrument Rental Section -->
+            <section id="rentals">
+                <p>Instrument Rental</hp>
+                <p>Explore our musical instrument rental options for events, recording or experimentation before
+                    purchasing.</p>
+            </section>
+            <br>
+            <br>
 
-    <!-- Store Policy -->
-    <section id="politics">
-        <p>Store Policy</p>
-        <p>Learn about our sales, warranty, exchange and return policies to ensure a transparent and satisfactory purchasing experience.</p>
-    </section>
-    <br>
-    <br>
+            <!-- Store Policy -->
+            <section id="politics">
+                <p>Store Policy</p>
+                <p>Learn about our sales, warranty, exchange and return policies to ensure a transparent and
+                    satisfactory purchasing experience.</p>
+            </section>
+            <br>
+            <br>
 
-    <!-- Partnerships Section -->
-    <section id="partnerships">
-        <p>Partnerships</p>
-        <p>We are open to partnerships with music schools, local artists and companies in the sector. Learn more about collaboration opportunities.</p>
-    </section>
-    <br>
-    <br>
+            <!-- Partnerships Section -->
+            <section id="partnerships">
+                <p>Partnerships</p>
+                <p>We are open to partnerships with music schools, local artists and companies in the sector. Learn more
+                    about collaboration opportunities.</p>
+            </section>
+            <br>
+            <br>
 
             <section id="special-offers" class="info">
                 <p>Ofertas Especiais</p>
@@ -968,7 +1074,7 @@
             </section>
 
             <footer>
-                
+
                 <div class="footer-content">
                     <div class="footer-item">
                         <p>Opening Hours</p>
@@ -1017,6 +1123,33 @@
                 });
             </script>
 
+
+            <!-- Seu script JavaScript -->
+            <script>
+                document.getElementById('registerForm').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    const formData = new FormData(e.target);
+                    const data = new URLSearchParams(formData);
+
+                    try {
+                        const response = await fetch('http://localhost:3000/register', {
+                            method: 'POST',
+                            body: data
+                        });
+
+                        if (!response.ok) {
+                            throw new Error('Erro ao registrar.');
+                        }
+
+                        const result = await response.text();
+                        alert(result); // Exibe mensagem do servidor
+                    } catch (error) {
+                        console.error('Erro:', error.message);
+                        alert('Erro ao registrar.');
+                    }
+                });
+            </script>
             <footer>
                 <div class="footer-bottom">
                     <p>&copy; 2024 Music Store Harmony - All rights reserved.</p>
