@@ -44,7 +44,7 @@
             box-sizing: border-box;
         }
         button {
-            background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradiente */
+            background: linear-gradient(45deg, #e67e22, #d35400);/* Gradiente */
             color: #fff;
             padding: 10px 15px;
             border: none;
@@ -54,7 +54,7 @@
             font-size: 16px; /* Tamanho da fonte */
             transition: background 0.3s ease, transform 0.3s ease; /* Transições suaves */
         }
-      button:hover {
+        button:hover {
             background: linear-gradient(45deg, #3498db, #2980b9);
             transform: scale(1.05); /* Leve aumento ao passar o mouse */
         }
@@ -74,8 +74,9 @@
     <!-- Vídeo de fundo -->
     <video id="video-background" autoplay muted loop>
         <source src="assets/musica2.mp4" type="video/mp4">
+        <!-- Fallback para navegadores que não suportam vídeo -->
         Your browser does not support the video tag.
-    </video>>
+    </video>
 
     <div class="container">
         <h2>Login</h2>
@@ -114,3 +115,4 @@
     </script>
 </body>
 </html>
+
